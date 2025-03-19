@@ -22,5 +22,8 @@ func main() {
 	//app.Post("/register", Register)
 	//app.Post("/login", Login)
 
+	//app.Post("/tasks", CreateTask)
+	//app.Get("/tasks", GetTasks)
+
 	log.Fatal(app.Listen(":5000"))
 }

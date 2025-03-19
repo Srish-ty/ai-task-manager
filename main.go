@@ -19,11 +19,11 @@ func main() {
 		return c.JSON(fiber.Map{"message": "AI Task Manager API is running"})
 	})
 
-	//app.Post("/register", Register)
-	//app.Post("/login", Login)
+	app.Post("/register", Register)
+	app.Post("/login", Login)
 
-	//app.Post("/tasks", CreateTask)
-	//app.Get("/tasks", GetTasks)
+	app.Post("/tasks", CreateTask)
+	app.Get("/tasks", GetTasks)
 
 	log.Fatal(app.Listen(":5000"))
 }
